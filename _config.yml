@@ -3,6 +3,16 @@ description: Home
 theme: just-the-docs
 nav_enabled: false
 
+#Links
+url: https://sigsando.github.io/
+aux_links:
+  Github: https://github.com/sigSando
+
+#Color scheme and logo
+color_scheme: dark
+#logo: "/assets/logo.png"
+
+favicon_ico: "/assets/favicon.ico"
 
   collections:
     security:
@@ -22,19 +32,6 @@ collections:
   personal:
     permalink: "/:collection/:path/"
     output: true
-
-
-
-#Links
-url: https://sigsando.github.io/
-aux_links:
-  Github: https://github.com/sigSando
-
-#Color scheme and logo
-color_scheme: dark
-#logo: "/assets/logo.png"
-
-favicon_ico: "/assets/favicon.ico"
 
 callouts:
   warning:
