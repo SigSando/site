@@ -1,35 +1,96 @@
 ---
+layout: default
 title: Home
-layout: home
+nav_order: 1
+description: "Focusing on Documentation"
+nav_exclude: true
 ---
 
-This is a *bare-minimum* template to create a Jekyll site that uses the [Just the Docs] theme. You can easily set the created site to be published on [GitHub Pages] – the [README] file explains how to do that, along with other details.
+{: .label .label-green } 
+New (v1.9.1)
 
-If [Jekyll] is installed on your computer, you can also build and preview the created site *locally*. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^1] And you will be able to deploy your local build to a different platform than GitHub Pages.
+{: .label .label-blue } 
+Last updated 12/23/2024
 
-More specifically, the created site:
+![new](/assets/new.jpg)
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages
+# <span style="color: royalblue; font-weight: bold;"> Focused on writing easy-to-read quality documentation</span>
+{: .fs-9 }
 
-Other than that, you're free to customize sites that you create with this template, however you like. You can easily change the versions of `just-the-docs` and Jekyll it uses, as well as adding further plugins.
+{: .text-center }
+## <span style="color: orange; font-weight: bold;">Welcome to my website and cybersecurity blog.</span>
 
-[Browse our documentation][Just the Docs] to learn more about how to use this theme.
+This is a free resource for anyone, which provides a insight and research into the cybersecurity field, IT fundamentals, and other personal items. Its an opportunity for myself to practice technical writing and teaching. This website can be an awesome tool for anyone to reference, search, and have quick access to learning material. I try to have pride in originality, however, I pull inspiration and guidance from many other people. I try my best to credit those individuals I learn from. Please enjoy. -Alex
 
-To get started with creating a site, simply:
 
-1. click "[use this template]" to create a GitHub repository
-2. go to Settings > Pages > Build and deployment > Source, and select GitHub Actions
-
-If you want to maintain your docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md#hosting-your-docs-from-an-existing-project-repo) in the template README.
+Coming Soon!
+{: .label .label-yellow }
+````scss
+> Videos 
+> Cybersecurity malware analyis 
+> Security Tool guides
+> Networking Overview 
+````
 
 ----
 
-[^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
+ I would love to credit the 3 core components that keep this project free and functioning. Github>Github Pages, Jekyll website builder, and the original template is this repository from `JustTheDocs`. 
 
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
+ Also a big shout out to the ***[Contributers]*** to JustTheDocs, for their documentation on the `Markdown` language, `Liquid`, and `HTMl`.
+
+
+[GitHub Pages][GitHub Pages]{: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Jekyll][Jekyll]{: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Just the Docs][Just the Docs repo]{: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+
+
+----
+
+### <span style="color: royalblue; font-weight: bold;">CyberSec news feed:</span>
+
+[Threatable.io]{: .btn .fs-5 .mb-4 .mb-md-0 }
+[Bleeping computer]{: .btn .fs-5 .mb-4 .mb-md-0 }
+[Sans edu]{: .btn .fs-5 .mb-4 .mb-md-0 }
+
+----
+
+<span style="color: royalblue; font-weight: bold;">Purchase me an energy drink (Monero):</span>
+46zGLPpMGNtZPk8VmWvuHDVWUbHyRB6CDCcY7WyiEQMRP1UZDrv9Crta27FZqtPqDABDoXHog15Ej77BhojNxbAu2xDzaee
+
+![donations](/assets/donations.png)
+
+Dont actually
+
+---
+
+<button class="btn btn-primary js-toggle-dark-mode">Toggle Darkmode (click twice to confirm)</button>
+
+<script>
+const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
+
+jtd.addEvent(toggleDarkMode, 'click', function(){
+  if (jtd.getTheme() === 'dark') {
+    jtd.setTheme('light');
+    toggleDarkMode.textContent = 'View dark color scheme';
+  } else {
+    jtd.setTheme('dark');
+    toggleDarkMode.textContent = 'View light color scheme';
+  }
+});
+</script>
+
 [Jekyll]: https://jekyllrb.com
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
+[Jekyll configuration]: https://jekyllrb.com/docs/configuration/
+[Threatable.io]: https://www.threatable.io/
+[Bleeping computer]: https://www.bleepingcomputer.com/
+[Sans edu]:https://isc.sans.edu/
+[Just the Docs Template]: https://just-the-docs.github.io/just-the-docs-template/
+[Just the Docs]: https://just-the-docs.com
+[Just the Docs repo]: https://github.com/just-the-docs/just-the-docs
+[Just the Docs README]: https://github.com/just-the-docs/just-the-docs/blob/main/README.md
+[GitHub Pages]: https://pages.github.com/
+[Template README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
+[GitHub Pages]: https://pages.github.com/
+[use the template]: https://github.com/just-the-docs/just-the-docs-template/generate
+[Contributers]: https://just-the-docs.com/#contributing
+
