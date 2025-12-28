@@ -1,1 +1,1 @@
-a simple website: https://sigsando.github.io/site/
+a simple website: sigsando.github.io
