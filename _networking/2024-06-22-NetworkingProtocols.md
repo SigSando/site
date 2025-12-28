@@ -1,10 +1,8 @@
-
 ---
 layout: post
 title: "Networking 101" 
 categories: Networking
 nav_order: 1
-nav_exclude: false
 ---
 
 {: .text-center }
