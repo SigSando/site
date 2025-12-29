@@ -3,6 +3,7 @@ layout: default
 title: Home
 nav_order: 1
 description: "Focusing on Documentation"
+nav_exclude: true
 ---
 
 {: .label .label-green } 
@@ -52,6 +53,9 @@ Coming Soon!
 [Sans edu]{: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ----
+
+<span style="color: royalblue; font-weight: bold;">Purchase me an energy drink (Monero):</span>
+46zGLPpMGNtZPk8VmWvuHDVWUbHyRB6CDCcY7WyiEQMRP1UZDrv9Crta27FZqtPqDABDoXHog15Ej77BhojNxbAu2xDzaee
 
 ![donations](/assets/donations.png)
 
