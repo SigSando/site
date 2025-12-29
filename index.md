@@ -6,11 +6,9 @@ description: "Focusing on Documentation"
 nav_exclude: true
 ---
 
-{: .label .label-green } 
-New (v1.9.1)
 
 {: .label .label-blue } 
-Last updated 12/23/2024
+Last updated 12/23/2025
 
 ![new](/assets/new.jpg)
 
@@ -20,7 +18,7 @@ Last updated 12/23/2024
 {: .text-center }
 ## <span style="color: orange; font-weight: bold;">Welcome to my website and cybersecurity blog.</span>
 
-This is a free resource for anyone, which provides a insight and research into the cybersecurity field, IT fundamentals, and other personal items. Its an opportunity for myself to practice technical writing and teaching. This website can be an awesome tool for anyone to reference, search, and have quick access to learning material. I try to have pride in originality, however, I pull inspiration and guidance from many other people. I try my best to credit those individuals I learn from. Please enjoy. -Alex
+This is a free resource for everyone to utilize, which provides a ground level approach into learning cybersecurity, IT fundamentals, and also hosts other personal endeavors. Its an opportunity for myself to practice technical writing and teaching. I try to have pride in authentic and original creation, however, I pull inspiration and guidance from many other people. I try my best to credit those individuals I learn from. Please enjoy. -Alex
 
 
 Coming Soon!
@@ -34,9 +32,9 @@ Coming Soon!
 
 ----
 
- I would love to credit the 3 core components that keep this project free and functioning. Github>Github Pages, Jekyll website builder, and the original template is this repository from `JustTheDocs`. 
+ I would love to credit the 3 core components that keep this project free and functioning. Github & Github Pages, Jekyll website builder, and the original template is this repository from `JustTheDocs`. 
 
- Also a big shout out to the ***[Contributers]*** to JustTheDocs, for their documentation on the `Markdown` language, `Liquid`, and `HTMl`.
+ Also a big shout out to the ***[Contributers]*** to JustTheDocs, for their documentation!
 
 
 [GitHub Pages][GitHub Pages]{: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
@@ -46,11 +44,10 @@ Coming Soon!
 
 ----
 
-### <span style="color: royalblue; font-weight: bold;">CyberSec news feed:</span>
+### <span style="color: royalblue; font-weight: bold;">Short feed list:</span>
 
 [Threatable.io]{: .btn .fs-5 .mb-4 .mb-md-0 }
 [Bleeping computer]{: .btn .fs-5 .mb-4 .mb-md-0 }
-[Sans edu]{: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ----
 
@@ -59,7 +56,7 @@ Coming Soon!
 
 ![donations](/assets/donations.png)
 
-Dont actually
+Dont actually it's a WIP 
 
 ---
 
@@ -83,7 +80,6 @@ jtd.addEvent(toggleDarkMode, 'click', function(){
 [Jekyll configuration]: https://jekyllrb.com/docs/configuration/
 [Threatable.io]: https://www.threatable.io/
 [Bleeping computer]: https://www.bleepingcomputer.com/
-[Sans edu]:https://isc.sans.edu/
 [Just the Docs Template]: https://just-the-docs.github.io/just-the-docs-template/
 [Just the Docs]: https://just-the-docs.com
 [Just the Docs repo]: https://github.com/just-the-docs/just-the-docs
