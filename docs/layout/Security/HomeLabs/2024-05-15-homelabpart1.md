@@ -2,6 +2,7 @@
 layout: post
 title: "Network & Security Home Lab"
 categories: Security
+parent: Security 101
 has_children: true
 nav_order: 2
 ---

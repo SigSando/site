@@ -3,7 +3,6 @@ layout: default
 title: Home
 nav_order: 1
 description: "Focusing on Documentation"
-nav_exclude: true
 ---
 
 

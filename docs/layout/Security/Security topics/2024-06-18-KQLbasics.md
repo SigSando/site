@@ -2,7 +2,9 @@
 layout: post
 title: "KQL basics"
 categories: Security
-nav_order: 3
+parent: Security 101
+nav_order: 2
+nav_exclude: false
 ---
 
 {: .text-center }

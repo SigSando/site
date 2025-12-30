@@ -5,7 +5,6 @@ categories: Security
 parent: Network & Security Home Lab
 nav_order: 2
 nav_exclude: false
-
 ---
 
 {: .text-center }
