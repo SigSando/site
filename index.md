@@ -9,7 +9,12 @@ description: "Focusing on Documentation"
 {: .label .label-blue } 
 Last updated 12/23/2025
 
-![new](/assets/new.png)
+![new](assets/new.png)
+
+![new](new.png)
+
+![new](site/assets/new.png)
+
 
 # <span style="color: royalblue; font-weight: bold;"> Focused on writing easy-to-read quality documentation</span>
 {: .fs-9 }
