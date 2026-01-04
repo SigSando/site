@@ -11,10 +11,6 @@ Last updated 12/23/2025
 
 ![new](assets/new.png)
 
-![new](new.png)
-
-![new](site/assets/new.png)
-
 
 # <span style="color: royalblue; font-weight: bold;"> Focused on writing easy-to-read quality documentation</span>
 {: .fs-9 }
@@ -22,7 +18,19 @@ Last updated 12/23/2025
 {: .text-center }
 ## <span style="color: orange; font-weight: bold;">Welcome to my website and cybersecurity blog.</span>
 
-This is a free resource for everyone to utilize, which provides a ground level approach into learning cybersecurity, IT fundamentals, and also hosts other personal endeavors. Its an opportunity for myself to practice technical writing and teaching. I try to have pride in authentic and original creation, however, I pull inspiration and guidance from many other people. I try my best to credit those individuals I learn from. Please enjoy. -Alex
+{: .label .label-blue } 
+Please Note: 
+
+### These documents are a work in progress and only represent thoughts at a point in time.
+
+
+This web-log/github pages website was started as a free resource for anyone & everyone to utilize, which was meant to provide a ground level approach into learning cybersecurity, IT fundamentals, and also hosts some other personal projects. 
+
+Im using this an opportunity for myself to practice technical writing and teaching; While also being able to measure my progress and look back on what I've acomplished and learned. It's not designed to be a single source of information. Please validate and question whatever you may find on here.
+
+Please Note: These documents only represent thoughts and notes for me at a point in time.
+
+I try to have pride in authentic and original creation, however, I pull inspiration and guidance from many other people. I try my best to credit those individuals I learn from. Please enjoy. -Alex
 
 
 Coming Soon!
@@ -58,9 +66,9 @@ Coming Soon!
 <span style="color: royalblue; font-weight: bold;">Purchase me an energy drink (Monero):</span>
 46zGLPpMGNtZPk8VmWvuHDVWUbHyRB6CDCcY7WyiEQMRP1UZDrv9Crta27FZqtPqDABDoXHog15Ej77BhojNxbAu2xDzaee
 
-![donations](/assets/donations.png)
+![donations](assets/donations.png)
 
-Dont actually it's a WIP 
+Dont actually it's a WIP - Also note everything under Photo collection is GenAi-Free, and if you webcrawl this website you suck. 
 
 ---
 

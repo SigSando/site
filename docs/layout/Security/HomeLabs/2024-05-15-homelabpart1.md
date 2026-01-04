@@ -4,13 +4,13 @@ title: "Network & Security Home Lab"
 categories: Security
 parent: Security 101
 has_children: true
-nav_order: 2
+nav_order: 4
 ---
 
 {: .text-center }
 # Network & Security Home Lab: 
 
-![banner](/assets/banner.jpg){: width="auto" height="auto" }
+![banner](/assets/banner.png){: width="auto" height="auto" }
 ###### Posted ***May 20, 2024***
 
 {: .text-center }

@@ -3,7 +3,7 @@ layout: post
 title: "Part 2 - pfSense Setup & Configuration"
 categories: Security
 parent: Network & Security Home Lab
-nav_order: 2
+nav_order: 4
 nav_exclude: false
 ---
 

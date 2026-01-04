@@ -8,7 +8,7 @@ nav_exclude: false
 ---
 
 {: .text-center }
-# Kusto Query Language 101
+# Kusto Query Language KQL basics
 
 
 ![kql1](/assets/kql1.jpg){: width="auto" height="auto" }
@@ -18,11 +18,15 @@ nav_exclude: false
 
 ###### IN PROGRESS ***June 18, 2024***
 
-- KQL is designed to query large data sets, it is microsoft based & cloud native.
+- KQL is designed to query large data sets, it is microsoft sourced  & cloud native.
 
-- WORM language (Write Once Read Many)
+not to be confused with SQL which came first in the 70s.
 
-For security purposes, KQL is often used for queries in sentinel to find logs. This can be via many different operators in the query. Simple queries may be based around longer time frames, such as 7-30 days worth of logs, or to drill down into host events, network events and more.
+Specifically for querying data from many sources; KQL finds many purposes in analytics and auditing. 
+
+For Security purposes, KQL is often used for queries in microsoft sentinel to find logs. This can be via many different operators in the query. Simple queries may be based around longer time frames, such as 7-30 days worth of logs, or to drill down into host events, network events and more. This is important that customers can pay to search for wider ranges such as 90days+ for a fee.
+
+This can also be paired with things such as Analytics rules, playbooks, and custom alerts/incidents based on a queryable event in a SIEM (Sentinel)
 
 - Another good resource is 'kqlsearch', which provides an assistant, generator and lab. 
 
@@ -42,6 +46,15 @@ Tutorial
 ```scss
 https://www.youtube.com/watch?v=8JqwHaIW_Zc
 ```
+
+----
+
+
+
+
+
+
+
 
 ----
 

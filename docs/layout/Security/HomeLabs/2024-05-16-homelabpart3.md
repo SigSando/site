@@ -3,7 +3,7 @@ layout: post
 title: "Part 3 - Parrot Security (Linux setup)"
 categories: Security
 parent: Network & Security Home Lab
-nav_order: 3
+nav_order: 4
 nav_exclude: false
 ---
 
