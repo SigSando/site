@@ -17,9 +17,9 @@ nav_order: 4
 ## <span style="color: orange; font-weight: bold;">Part 1 - Introduction</span>
 
 
+
 {: .warning }
-This series was inspired and follows a similar structure to David Varghese's [blog] guide.
-However, I did my best to put my own spin on the home lab guide. 
+This guide will be replaced shortly
 
 
 ----

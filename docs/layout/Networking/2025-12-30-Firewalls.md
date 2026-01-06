@@ -9,7 +9,7 @@ parent: Networking 101
 {: .text-center }
 # Firewalls
 
-![firel](/assets/firel.jpg){: width="auto" height="auto" }
+![firel](/assets/firel.png){: width="auto" height="auto" }
 
 {: .text-center }
 ## <span style="color: orange; font-weight: bold;">What are firewalls & what do they do?</span>

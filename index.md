@@ -18,17 +18,11 @@ Last updated 12/23/2025
 {: .text-center }
 ## <span style="color: orange; font-weight: bold;">Welcome to my website and cybersecurity blog.</span>
 
-{: .label .label-blue } 
-Please Note: 
+This web-log/github pages website was started as a free resource to utilize, which was meant to provide a ground level approach into learning cybersecurity, IT fundamentals, and also hosts some other personal projects. 
 
-### These documents are a work in progress and only represent thoughts at a point in time.
+The information stored under Security 101 & Networking 101 is a work in progress but will eventually be moved to an owned domain rather than a Github pages site.
 
-
-This web-log/github pages website was started as a free resource for anyone & everyone to utilize, which was meant to provide a ground level approach into learning cybersecurity, IT fundamentals, and also hosts some other personal projects. 
-
-Im using this an opportunity for myself to practice technical writing and teaching; While also being able to measure my progress and look back on what I've acomplished and learned. It's not designed to be a single source of information. Please validate and question whatever you may find on here.
-
-Please Note: These documents only represent thoughts and notes for me at a point in time.
+Please Note: These documents only represent thoughts and notes for me at a point in time. It's not designed to be a single source of information.
 
 I try to have pride in authentic and original creation, however, I pull inspiration and guidance from many other people. I try my best to credit those individuals I learn from. Please enjoy. -Alex
 
@@ -39,7 +33,7 @@ Coming Soon!
 > Videos 
 > Cybersecurity malware analyis 
 > Security Tool guides
-> Networking Overview 
+> Networking 101 & Security 101
 ````
 
 ----
