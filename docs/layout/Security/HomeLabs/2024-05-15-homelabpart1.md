@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Network & Security Home Lab"
+title: "Network & Security Home Lab Module 1"
 categories: Security
 parent: Security 101
 has_children: true
@@ -10,16 +10,16 @@ nav_order: 4
 {: .text-center }
 # Network & Security Home Lab: 
 
-![banner](/assets/banner.png){: width="auto" height="auto" }
+![banner](/site/assets/banner.png){: width="auto" height="auto" }
 ###### Posted ***May 20, 2024***
 
 {: .text-center }
-## <span style="color: orange; font-weight: bold;">Part 1 - Introduction</span>
+## <span style="color: orange; font-weight: bold;">Module 1 - Introduction</span>
 
 
 
 {: .warning }
-This guide will be replaced shortly
+This guide will be updated shortly
 
 
 ----
@@ -28,24 +28,26 @@ This guide will be replaced shortly
 
 - PFsense (Firewall & Router)
 - Parrot linux
-- Cyber Control Range 
+- Cyber Range 
 - Malware Analysis Lab (Windows & Linux)
-- Security Virtual Machines (DFIR & SIEM)
-- Active Directory Lab
+- Security Virtual Machines (& SIEM)
+- Active Directory Labbing
 
 
 
 ##  <span style="color: royalblue; font-weight: bold;">Recommended Requirements</span> 
-- Windows 7 or 10 host OS (standalone from home and business os)
+- Linux Laptop 
+- Virtualbox
+- Windows 7 or 10 host isos (standalone from home and business os)
 - 64-bit multi-threaded CPU (minimum 4 cores) with Virtualization Support enabled
-- 16GB RAM
+- 16GB RAM (32 is great)
 - 500gb - 1TB Free disk space
 
 
 {: .warning }
-You should check if virtualization is enabled right now, by pressing *Shift>Control>Esc* to open ***Task Manager***. Under the Performance tab you can see if virtualization is enabled
+You should check if virtualization is enabled right now, by pressing *Shift>Control>Esc* to open ***Task Manager***. Under the Performance tab you can see if virtualization is enabled if on windows
 
-![taskm](/assets/taskm.png)
+![taskm](/site/assets/taskm.png)
 
 
 You should also already have [VC++] 2019 Redistributable installed as well.
@@ -56,7 +58,7 @@ You can view a [Virtualization Guide] on this page.
 In the next module, we will start with the installation and configuration of pfSense.
 
 
-### [Home Lab Part 2]({{site.baseurl}}/security/2024-05-16-homelabpart2/){: .btn .btn-green }
+### [Home Lab Part 2]({{site.baseurl}}/docs/layout/Security/HomeLabs/2024-05-16-homelabpart2){: .btn .btn-green }
 
 [VirtualBox]: https://www.virtualbox.org/wiki/Downloads
 

@@ -20,7 +20,7 @@ Last updated 12/23/2025
 
 This web-log/github pages website was started as a free resource to utilize, which was meant to provide a ground level approach into learning cybersecurity, IT fundamentals, and also hosts some other personal projects. 
 
-The information stored under Security 101 & Networking 101 is a work in progress but will eventually be moved to an owned domain rather than a Github pages site.
+The information under Security 101 & Networking 101 are meant to just be an infodump of informaiton I think is important. It a work in progress but will eventually be moved to an owned domain rather than a Github pages site.
 
 
 I try to have pride in authentic and original creation, however, I pull inspiration and guidance from many other people. I try my best to credit those individuals I learn from. Please enjoy. -Alex

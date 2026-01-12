@@ -2,7 +2,7 @@
 layout: post
 title: "Part 3 - Parrot Security (Linux setup)"
 categories: Security
-parent: Network & Security Home Lab
+parent: Network & Security Home Lab Module 1
 nav_order: 4
 nav_exclude: false
 ---
@@ -10,7 +10,7 @@ nav_exclude: false
 {: .text-center }
 # Network & Security Home Lab: 
 
-![banner](/assets/banner.jpg){: width="auto" height="auto" }
+![banner](/site/assets/banner.png){: width="auto" height="auto" }
 ###### Posted ***June 16, 2024***
 
 {: .text-center }
@@ -27,7 +27,7 @@ Go to the following link: `Download` > [Parrot linux]
 
 As of writing the latest version of Parrot is `6.1 Lorikeet`
 
-![vbox41.png](/assets/vbox41.png){: width="auto" height="auto" }
+![vbox41.png](/site/assets/vbox41.png){: width="auto" height="auto" }
 
 - Download the recommended VirtualBox `.ova`. The image is around 7GB in size so it will take some time to download.
 
@@ -49,7 +49,7 @@ Since this is a .ova file, you will `import` not Create `new`. In VirtualBox.
 <details markdown="block">
 <summary> <span style="color: orange; font-weight: bold;">Image Ref. (click me!)</span> </summary>
 
-![vbox42.png](/assets/vbox42.png){: width="auto" height="auto" }
+![vbox42.png](/site/assets/vbox42.png){: width="auto" height="auto" }
 
 </details>
 
@@ -58,7 +58,7 @@ Since this is a .ova file, you will `import` not Create `new`. In VirtualBox.
 <details markdown="block">
 <summary> <span style="color: orange; font-weight: bold;">Image Ref. (click me!)</span> </summary>
 
-![vbox43.png](/assets/vbox43.png){: width="auto" height="auto" }
+![vbox43.png](/site/assets/vbox43.png){: width="auto" height="auto" }
 
 </details>
 
@@ -68,7 +68,7 @@ Since this is a .ova file, you will `import` not Create `new`. In VirtualBox.
 <details markdown="block">
 <summary> <span style="color: orange; font-weight: bold;">Image Ref. (click me!)</span> </summary>
 
-![vbox44.png](/assets/vbox44.png){: width="auto" height="auto" }
+![vbox44.png](/site/assets/vbox44.png){: width="auto" height="auto" }
 
 </details>
 
@@ -82,7 +82,7 @@ You are able to change values later on for hardware resources if need be.
 <details markdown="block">
 <summary> <span style="color: orange; font-weight: bold;">Image Ref. (click me!)</span> </summary>
 
-![vbox45.png](/assets/vbox45.png){: width="auto" height="auto" }
+![vbox45.png](/site/assets/vbox45.png){: width="auto" height="auto" }
 
 </details>
 
@@ -105,7 +105,7 @@ Double check, now we should have the following structure:
 <details markdown="block">
 <summary> <span style="color: orange; font-weight: bold;">Image Ref. (click me!)</span> </summary>
 
-![vbox46.png](/assets/vbox46.png){: width="auto" height="auto" }
+![vbox46.png](/site/assets/vbox46.png){: width="auto" height="auto" }
 
 </details>
 
@@ -117,7 +117,7 @@ Double check, now we should have the following structure:
 
 - Hit `Yes` to check for updates.
 
-![vbox47.png](/assets/vbox47.png){: width="auto" height="auto" }
+![vbox47.png](/site/assets/vbox47.png){: width="auto" height="auto" }
 
 ## <span style="color: royalblue; font-weight: bold;">Default password</span>
 
@@ -133,9 +133,9 @@ password: parrot
 <details markdown="block">
 <summary> <span style="color: orange; font-weight: bold;">Image Ref. (click me!)</span> </summary>
 
-![vbox48.png](/assets/vbox48.png){: width="auto" height="auto" }
+![vbox48.png](/site/assets/vbox48.png){: width="auto" height="auto" }
 
-![vbox49.png](/assets/vbox49.png){: width="auto" height="auto" }
+![vbox49.png](/site/assets/vbox49.png){: width="auto" height="auto" }
 
 </details>
 
@@ -165,7 +165,7 @@ sudo shutdown now
 Go to `Network -> Adapter 1`. For the Attached to field select `Internal Network`. For Name select `LAN 0`. Expand the 
 *Advanced* section. For *Adapter Type* select `Paravirtualized Network (virtio-net)`.
 
-![vbox50.png](/assets/vbox50.png){: width="auto" height="auto" }
+![vbox50.png](/site/assets/vbox50.png){: width="auto" height="auto" }
 
 
 ## <span style="color: royalblue; font-weight: bold;">Changing Default password/IP a</span>
@@ -186,14 +186,14 @@ You should also change the default username.
 ip a
 ```
 
-![vbox51.png](/assets/vbox51.png){: width="auto" height="auto" }
+![vbox51.png](/site/assets/vbox51.png){: width="auto" height="auto" }
 
 - We can confirm the right subnet is designated by cross referencing the pfSense router. See below.
 
 <details markdown="block">
 <summary> <span style="color: orange; font-weight: bold;">Image Ref. (click me!)</span> </summary>
 
-![vbox53.png](/assets/vbox53.png){: width="auto" height="auto" }
+![vbox53.png](/site/assets/vbox53.png){: width="auto" height="auto" }
 
 </details>
 
@@ -204,7 +204,7 @@ sudo su
 passwd user
 ```
 
-![vbox52.png](/assets/vbox52.png){: width="auto" height="auto" }
+![vbox52.png](/site/assets/vbox52.png){: width="auto" height="auto" }
 
 
 {: .warning }

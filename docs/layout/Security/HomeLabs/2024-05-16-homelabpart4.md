@@ -2,7 +2,7 @@
 layout: post
 title: "Part 4 - pfSense Firewall configuration"
 categories: Security
-parent: Network & Security Home Lab
+parent: Network & Security Home Lab Module 1
 nav_order: 4
 nav_exclude: false
 
@@ -11,7 +11,7 @@ nav_exclude: false
 {: .text-center }
 ## Network & Security Home Lab: 
 
-![banner](/assets/banner.jpg){: width="auto" height="auto" }
+![banner](/site/assets/banner.png){: width="auto" height="auto" }
 ###### Posted ***June 17, 2024***
 
 {: .text-center }
@@ -38,7 +38,7 @@ This url is opening the pfSense Web UI login page.
 Username: `admin`
 Password: `pfsense`
 
-![vbox71.png](/assets/vbox71.png){: width="auto" height="auto" }
+![vbox71.png](/site/assets/vbox71.png){: width="auto" height="auto" }
 
 Once logged in the next 2 pages are introductory. 
 
@@ -48,11 +48,11 @@ Click `Next` again.
 
 In the `General Information` section. Provide a *Hostname* and *Domain* name. This can be any name you choose. The hostname can be used to identify the pfSense VM on the network. Uncheck the Override DNS option and then click `Next`.
 
-![vbox72.png](/assets/vbox72.png){: width="auto" height="auto" }
+![vbox72.png](/site/assets/vbox72.png){: width="auto" height="auto" }
 
 Select your Timezone and then click `Next`.
 
-![vbox73.png](/assets/vbox73.png){: width="auto" height="auto" }
+![vbox73.png](/site/assets/vbox73.png){: width="auto" height="auto" }
 
 ----
 
@@ -76,18 +76,18 @@ Don’t change any value on this page. Click on `Next`.
 
 > Enter a new password for the admin user. Store the password in a secure place.
 
-![vbox74.png](/assets/vbox74.png){: width="auto" height="auto" }
+![vbox74.png](/site/assets/vbox74.png){: width="auto" height="auto" }
 
 
 Click on `Reload` to apply the changes.
 
 Click on `Finish`.
 
-![vbox75.png](/assets/vbox75.png){: width="auto" height="auto" }
+![vbox75.png](/site/assets/vbox75.png){: width="auto" height="auto" }
 
 > Once on this page, just hit Finish.
 
-![vbox76.png](/assets/vbox76.png){: width="auto" height="auto" }
+![vbox76.png](/site/assets/vbox76.png){: width="auto" height="auto" }
 
 
 Once the copyright agreement is agreed to, we have access to the dashboard.
@@ -102,7 +102,7 @@ In the Description field enter `CYBER_RANGE`. Scroll to the bottom and click on 
 
 > Once saved, pfSense will ask you once again to confirm
 
-![vbox77.png](/assets/vbox77.png){: width="auto" height="auto" }
+![vbox77.png](/site/assets/vbox77.png){: width="auto" height="auto" }
 
 At the top of the page, a new popup will appear. 
 
@@ -115,7 +115,7 @@ In the Description field enter `AD_LAB`. Scroll to the bottom of the page and cl
 
 > Click on `Apply Changes`.
 
-![vbox78.png](/assets/vbox78.png){: width="auto" height="auto" }
+![vbox78.png](/site/assets/vbox78.png){: width="auto" height="auto" }
 
 ----
 
@@ -131,13 +131,13 @@ Scroll to the bottom of the page,
 
 > scroll to the top of the page (save but dont apply changes!)
 
-![vbox79.png](/assets/vbox79.png){: width="auto" height="auto" }
+![vbox79.png](/site/assets/vbox79.png){: width="auto" height="auto" }
 
 Click on `Advanced Settings`.
 
 Scroll down to the `Advanced Resolver Options` section and enable the 2 pictured options. Scroll to the end and click on Save.
 
-![vbox80.png](/assets/vbox80.png){: width="auto" height="auto" }
+![vbox80.png](/site/assets/vbox80.png){: width="auto" height="auto" }
 
 > A popup will appear at the top of the page. Click on `Apply Changes`.
 
@@ -153,7 +153,7 @@ Scroll to the bottom of the System/Advanced/Networking page, and in the `Network
 
 > Click on `Save`.
 
-![vbox81.png](/assets/vbox81.png){: width="auto" height="auto" }
+![vbox81.png](/site/assets/vbox81.png){: width="auto" height="auto" }
 
 At this point a popup will appear click on `OK` to reboot pfSense.
 
@@ -165,15 +165,15 @@ Once you have logged in again,
 
 From the navigation bar select `Status -> DHCP Leases`.
 
-![vbox82.png](/assets/vbox82.png){: width="auto" height="auto" }
+![vbox82.png](/site/assets/vbox82.png){: width="auto" height="auto" }
 
 In the Leases section, we should see the Kali Linux VM with its current IP address. Click on the highlighted + icon to assign a static IP to Kali Linux. The static IP will make it easier for us to apply firewall rules to interfaces that should only be able to reach the Kali VM.
 
-![vbox83.png](/assets/vbox83.png){: width="auto" height="auto" }
+![vbox83.png](/site/assets/vbox83.png){: width="auto" height="auto" }
 
 In the IP Address input enter `10.0.0.2`. Scroll to the bottom and click on `Save`.
 
-![vbox84.png](/assets/vbox84.png){: width="auto" height="auto" }
+![vbox84.png](/site/assets/vbox84.png){: width="auto" height="auto" }
 
 A popup will show up at the top of the page. Click on `Apply Changes`.
 
@@ -199,7 +199,7 @@ Enter password when prompted. To confirm that the VM is using the static IP run 
 ip a l eth0
 ```
 
-![vbox85.png](/assets/vbox85.png){: width="auto" height="auto" }
+![vbox85.png](/site/assets/vbox85.png){: width="auto" height="auto" }
 
 ----
 
@@ -214,7 +214,7 @@ From the navigation bar select `Firewall -> Rules -> LAN`.
 
 Click on the “Add rule to top” button to create a new rule.
 
-![vbox86.png](/assets/vbox86.png){: width="auto" height="auto" }
+![vbox86.png](/site/assets/vbox86.png){: width="auto" height="auto" }
 
 Change the following options:
 
@@ -230,7 +230,7 @@ Destination: `WAN subnets`
 
 Description: `Block access to services on WAN interface`
 
-![vbox87.png](/assets/vbox87.png){: width="auto" height="auto" }
+![vbox87.png](/site/assets/vbox87.png){: width="auto" height="auto" }
 
 Scroll to the bottom and click on `Save`.
 
@@ -238,7 +238,7 @@ A popup will appear to confirm, you can now click on `Apply Changes`.
 
 The final LAN rules should match the picture below.
 
-![vbox88.png](/assets/vbox88.png){: width="auto" height="auto" }
+![vbox88.png](/site/assets/vbox88.png){: width="auto" height="auto" }
 
 > If the order is not correct. Drag the rules around till it matches the above image.
 
@@ -250,7 +250,7 @@ Before creating the rules for `CYBER_RANGE` we need to create a *Alias*. From th
 
 Once in the IP tab click on `Add` to create a new alias.
 
-![vbox89.png](/assets/vbox89.png){: width="auto" height="auto" }
+![vbox89.png](/site/assets/vbox89.png){: width="auto" height="auto" }
 
 Enter the following details:
 
@@ -272,13 +272,13 @@ Network 5: `127.0.0.0/8`
 
 Click on `Save` to create an alias.
 
-![vbox90.png](/assets/vbox90.png){: width="auto" height="auto" }
+![vbox90.png](/site/assets/vbox90.png){: width="auto" height="auto" }
 
 A popup will show up to confirm, click on `Apply Changes`.
 
 The final result should be as follows once applied:
 
-![vbox91.png](/assets/vbox91.png){: width="auto" height="auto" }
+![vbox91.png](/site/assets/vbox91.png){: width="auto" height="auto" }
 
 From the navigation bar select `Firewall -> Rules`. Select the `CYBER_RANGE` tab.
 
@@ -356,10 +356,10 @@ Scroll to the bottom and click on `Save`.
 <details markdown="block">
 <summary> <span style="color: orange; font-weight: bold;">Image Ref. (click me!)</span> </summary>
 
-![vbox92.png](/assets/vbox92.png){: width="auto" height="auto" }
-![vbox93.png](/assets/vbox93.png){: width="auto" height="auto" }
-![vbox94.png](/assets/vbox94.png){: width="auto" height="auto" }
-![vbox95.png](/assets/vbox95.png){: width="auto" height="auto" }
+![vbox92.png](/site/assets/vbox92.png){: width="auto" height="auto" }
+![vbox93.png](/site/assets/vbox93.png){: width="auto" height="auto" }
+![vbox94.png](/site/assets/vbox94.png){: width="auto" height="auto" }
+![vbox95.png](/site/assets/vbox95.png){: width="auto" height="auto" }
 
 </details>
 
@@ -368,7 +368,7 @@ Click on the `Apply Changes` button at the top of the screen.
 
 The final rules should look as follows:
 
-![vbox96.png](/assets/vbox96.png){: width="auto" height="auto" }
+![vbox96.png](/site/assets/vbox96.png){: width="auto" height="auto" }
 
 ----
  
@@ -439,15 +439,15 @@ Click on the `Apply Changes` button in the popup at the top of the screen.
 <details markdown="block">
 <summary> <span style="color: orange; font-weight: bold;">Image Ref. (click me!)</span> </summary>
 
-![vbox97.png](/assets/vbox97.png){: width="auto" height="auto" }
-![vbox98.png](/assets/vbox98.png){: width="auto" height="auto" }
-![vbox99.png](/assets/vbox99.png){: width="auto" height="auto" }
+![vbox97.png](/site/assets/vbox97.png){: width="auto" height="auto" }
+![vbox98.png](/site/assets/vbox98.png){: width="auto" height="auto" }
+![vbox99.png](/site/assets/vbox99.png){: width="auto" height="auto" }
 
 </details>
 
 The final rules should look as follows:
 
-![vbox100.png](/assets/vbox100.png){: width="auto" height="auto" }
+![vbox100.png](/site/assets/vbox100.png){: width="auto" height="auto" }
 
 ----
 

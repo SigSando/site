@@ -2,7 +2,7 @@
 layout: post
 title: "Part 5 - Cyber Range setup"
 categories: Security
-parent: Network & Security Home Lab
+parent: Network & Security Home Lab Module 1
 nav_order: 4
 nav_exclude: false
 ---

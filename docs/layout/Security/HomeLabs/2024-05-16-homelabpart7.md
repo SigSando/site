@@ -2,7 +2,7 @@
 layout: post
 title: "Part 7 - Malware Analysis Lab Setup"
 categories: Security
-parent: Network & Security Home Lab
+parent: Network & Security Home Lab Module 1
 nav_order: 7
 nav_exclude: true
 ---
