@@ -22,7 +22,6 @@ This web-log/github pages website was started as a free resource to utilize, whi
 
 The information stored under Security 101 & Networking 101 is a work in progress but will eventually be moved to an owned domain rather than a Github pages site.
 
-Please Note: These documents only represent thoughts and notes for me at a point in time. It's not designed to be a single source of information.
 
 I try to have pride in authentic and original creation, however, I pull inspiration and guidance from many other people. I try my best to credit those individuals I learn from. Please enjoy. -Alex
 
