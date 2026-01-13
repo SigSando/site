@@ -336,8 +336,10 @@ Enter the end address of the IPv4 client address range: `172.27.8.244`
 Do you want to revert to HTTP as the webConfigurator protocol?: `n`
 
 Press `Enter` to save the changes and return to the main menu.
+![revbox37.png](/site/assets/revbox37.png){: width="auto" height="auto" }
 
-## <span style="color: royalblue; font-weight: bold;">Configuring OPT1 (vtnet3)</span>
+
+## <span style="color: royalblue; font-weight: bold;">Configuring OPT2 (vtnet3)</span>
 
 Enter `2` to select “Set interface(s) IP address”. Enter `4` to select the `OPT2` interface.
 
