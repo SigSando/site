@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Part 4 - Parrot Security (Linux setup)"
+title: "Part 3 - Parrot (Linux setup)"
 categories: Security
 parent: Network & Security Home Lab Module 1
 nav_order: 4
@@ -14,18 +14,18 @@ nav_exclude: false
 ###### Posted ***June 16, 2024***
 
 {: .text-center }
-## <span style="color: orange; font-weight: bold;">Part 4 - Parrot Linux setup</span>
+## <span style="color: orange; font-weight: bold;">Part 3 - Parrot Linux setup</span>
 
 
-In this module, we are going to install Parrot OS. This VM will be used for ethical hacking and management.
+In this module, we are going to install a linux of your choice. My recommendations are Parrot or Kali operating systems for use in the cyber range. Additionally I will go over a brief installation of Cachy OS to seperate workflows. Cachy OS is a good linux for productivity, automation etc.
 
-We will use this VM in the next module also to complete the pfSense final setup.
+We will use the management VM of choice in the next module also to complete the pfSense final setup.
 
 ## <span style="color: royalblue; font-weight: bold;">Download Parrot Linux</span>
 
 Go to the following link: `Download` > [Parrot linux] 
 
-As of writing the latest version of Parrot is `6.1 Lorikeet`
+As of writing the latest version of Parrot is `7.0`
 
 ![vbox41.png](/site/assets/vbox41.png){: width="auto" height="auto" }
 
@@ -229,6 +229,35 @@ After the update is complete run the following command to remove the unused pack
 sudo apt autoremove
 ```
 
+## <span style="color: royalblue; font-weight: bold;">Download Kali and Cachy OS</span>
+
+This next section is optional and up to your preference. Since both Kali and Cachy OS come in `.iso` format we can do both installations in the same manner.
+
+Go to the following links: `Download` > [Cachy OS] > [Kali] 
+
+
+![kdown.png](/site/assets/kdown.png){: width="auto" height="auto" }
+
+![cdown.png](/site/assets/cdown.png){: width="auto" height="auto" }
+
+- Make sure to download the recommended VirtualBox `.iso`s and desktop edition for cachy os. The images are around 2.8GB & 3.5GB in size so it will take some time to download these.
+
+> Once it is downloaded we should have an 2 `.iso` file.
+
+- Move this file to the folder where the images for the home lab have been also stored.
+
+{: .warning}
+Since these are .iso files, you will hit `Create new`. In VirtualBox.
+
+----
+
+## <span style="color: royalblue; font-weight: bold;">ParrotSec VM Creation</span>
+
+- Open VirtualBox. 
+
+- Select `Machine` from the toolbar and then click on `New`.
+
+
 
 In the next module, we will access the pfSense Web UI and complete the remaining configuration.
 
@@ -238,3 +267,5 @@ In the next module, we will access the pfSense Web UI and complete the remaining
 
 
 [Parrot linux]: https://parrotsec.org/download/
+[Cachy OS]: https://cachyos.org/
+[Kali]: https://www.kali.org/get-kali/#kali-virtual-machines

@@ -405,7 +405,7 @@ From the dropdown select `Remove Disk` from `Virtual Drive`. Click on `OK` to sa
 
 The .iso file along with the .iso.gz file that was downloaded to create the VM can be deleted if you do not want to store them.
 
-In the next module, we will set up `Kali Linux/Parrot/CachyOS` on the `LAN` interface. This VM will be used to configure and manage pfSense. It will also be used as the attack VM to target the vulnerable systems on the `OPT1` (CYBER_RANGE).
+In the next module, we will set up `Kali Linux/Parrot/CachyOS` on the `LAN` interface. This VM will be used to configure and manage pfSense. It will also be used as the attack VM to target the vulnerable systems on the `OPT1` (CYBER_RANGE). 
 
 
 ### [Home Lab Part 3]({{site.baseurl}}/security/2024-05-16-homelabpart3/){: .btn .btn-green }
