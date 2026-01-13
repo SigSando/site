@@ -10,7 +10,7 @@ nav_exclude: false
 {: .text-center }
 # Network & Security Home Lab: 
 
-![banner](/site/assets/banner.jpg){: width="auto" height="auto" }
+![banner](/site/assets/banner.png){: width="auto" height="auto" }
 ###### Posted ***May 22, 2024***
 
 {: .text-center }
@@ -37,7 +37,7 @@ Go to: `pfSense Community Edition` > [Download]
 
 As of January 12, 2026 the latest version of pfSense is `2.8.0`.
 
-`You will have to create an account with NetGate, which I wont be covering.
+`You will have to create an account with NetGate, which I wont be covering as it sucks. but not as much as spectrum, cisco, micro slop, and metaslop as its more of an EULA focused account.
 Account setup is free, and once registered navigate to the download portal.`
 
 ![vbox18.png](/site/assets/vbox18.png){: width="auto" height="auto" }
@@ -52,7 +52,9 @@ Account setup is free, and once registered navigate to the download portal.`
 
 The downloaded file will have an `.iso.gz` file type.
 
-You can use *7-Zip* or another decompression software to extract the image.
+You can use *7-Zip* or another decompression software to extract the image. (windows)
+
+On linux for enthusiats use `gzip -d` 
 
 After extraction, we should have a `.iso` file. 
 
@@ -183,6 +185,8 @@ For the pfSense install, the installation process will just be hitting `next` qu
 
 - Initally, an agreement will appear. `Press Enter` if you would like to Accept the agreement. 
 
+in 2026 the installation has changed, so pictures are going through updates.
+
 {: .warning }
 Note you will have to accept the agreement to use the features of this machine.
 
@@ -266,7 +270,7 @@ Then again,
 
 Configure IPv4 address LAN interface via DHCP?: `n`
 
-Enter the new LAN IPv4 address: `10.0.0.1`
+Enter the new LAN IPv4 address: `172.27.1.1`
 
 Enter the new LAN IPv4 subnet bit count: `24`
 
@@ -285,9 +289,9 @@ For the new LAN IPv6 address question press `Enter`
 
 Do you want to enable the DHCP server on LAN?: `y`
 
-Enter the start address of the IPv4 client address range: `10.0.0.11`
+Enter the start address of the IPv4 client address range: `172.27.1.42`
 
-Enter the end address of the IPv4 client address range: `10.0.0.243`
+Enter the end address of the IPv4 client address range: `172.27.1.244`
 
 Do you want to revert to HTTP as the webConfigurator protocol?: `n`
 
@@ -307,7 +311,7 @@ Enter `2` to select “Set interface(s) IP address”. Enter `3` this time in or
 
 Configure IPv4 address OPT1 interface via DHCP?: `n`
 
-Enter the new OPT1 IPv4 address: `10.6.6.1`
+Enter the new OPT1 IPv4 address: `172.27.8.1`
 
 Enter the new OPT1 IPv4 subnet bit count: `24`
 
@@ -317,7 +321,7 @@ Enter the new OPT1 IPv4 subnet bit count: `24`
 
 > For the next question directly press `Enter`. 
 
-Since `OPT1` is a `LAN` interface we do not have to worry about configuring the upstream gateway.
+Since `OPT1` is a `LAN` interface. We want this as a local network as well.
 
 Configure IPv6 address OPT1 interface via DHCP6: `n`
 
@@ -325,9 +329,9 @@ For the new OPT1 IPv6 address question press `Enter`
 
 Do you want to enable the DHCP server on OPT1?: `y`
 
-Enter the start address of the IPv4 client address range: `10.6.6.11`
+Enter the start address of the IPv4 client address range: `172.27.8.42`
 
-Enter the end address of the IPv4 client address range: `10.6.6.243`
+Enter the end address of the IPv4 client address range: `172.27.8.244`
 
 Do you want to revert to HTTP as the webConfigurator protocol?: `n`
 
@@ -339,7 +343,7 @@ Enter `2` to select “Set interface(s) IP address”. Enter `4` to select the `
 
 Configure IPv4 address OPT2 interface via DHCP?: `n`
 
-Enter the new OPT2 IPv4 address: `10.80.80.1`
+Enter the new OPT2 IPv4 address: `172.27.9.1`
 
 Enter the new OPT2 IPv4 subnet bit count: `24`
 
@@ -359,7 +363,7 @@ For the new OPT2 IPv6 address question press `Enter`
 Do you want to enable the DHCP server on OPT2?: `n`
 
 {: .warning }
-OPT2 will be used for the Active Directory (AD) Lab. The Domain Controller (DC) in the lab will act as the DHCP server. Since the DC will perform DHCP, this is why we have disabled DHCP IP address assignment for this interface in pfSense.
+OPT2 will be used for the Active Directory (AD) Lab. The Domain Controller (DC) in the lab will act as the DHCP server. Since the DC will perform DHCP, this is why we have disabled DHCP IP address assignment for this interface in pfSense. At least for this LAN. 
 
 Do you want to revert to HTTP as the webConfigurator protocol?: `n`
 
@@ -373,14 +377,14 @@ The IP addresses for the `LAN`, `OPT1` and `OPT2` interfaces should be as follow
 
 ![vbox40.png](/site/assets/vbox40.png){: width="auto" height="auto" }
 
-Once confirmed, we have completed the configuration of the interfaces for our pfSense. However, there are still some additional settings that need to be configured. We will change these settings once we set up Kali Linux in the next module. From Kali Linux, we will access the pfSense Web Interface and proceed from there.
+Once confirmed, we have completed the configuration of the interfaces for our pfSense. However, there are still some additional settings that need to be configured. We will change these settings once we set up Linux in the next module. From a Linux distro of your choice, we will access the pfSense Web Interface and proceed from there.
 
 {: .warning }
 pfSense Web Interface can be accessible for all the `LAN` interfaces in our `LAN`!
 
 ## <span style="color: royalblue; font-weight: bold;">Shutdown pfSense</span>
 
-When we start the lab pfSense is the first VM that has to be booted. When we shut down the lab pfSense will be the ***last*** VM that is stopped.
+When we start the lab pfSense is the first VM that has to be booted. When we shut down the lab it won't matter too much.
 
 > From the Main Menu
 
@@ -401,7 +405,7 @@ From the dropdown select `Remove Disk` from `Virtual Drive`. Click on `OK` to sa
 
 The .iso file along with the .iso.gz file that was downloaded to create the VM can be deleted if you do not want to store them.
 
-In the next module, we will set up `Kali Linux` on the `LAN` interface. This VM will be used to configure and manage pfSense. It will also be used as the attack VM to target the vulnerable systems on the `OPT1` (CYBER_RANGE).
+In the next module, we will set up `Kali Linux/Parrot/CachyOS` on the `LAN` interface. This VM will be used to configure and manage pfSense. It will also be used as the attack VM to target the vulnerable systems on the `OPT1` (CYBER_RANGE).
 
 
 ### [Home Lab Part 3]({{site.baseurl}}/security/2024-05-16-homelabpart3/){: .btn .btn-green }

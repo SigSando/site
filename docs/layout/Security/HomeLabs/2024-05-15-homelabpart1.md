@@ -25,7 +25,7 @@ This guide will be updated shortly
 ----
 
 ## <span style="color: royalblue; font-weight: bold;">Item Overview</span>
-
+some things in the lab:
 - PFsense (Firewall & Router)
 - Parrot linux
 - Cyber Range 

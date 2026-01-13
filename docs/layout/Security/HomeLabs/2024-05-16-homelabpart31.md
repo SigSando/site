@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Part 4 - pfSense Firewall configuration"
+title: "Part 3 - pfSense Firewall configuration"
 categories: Security
 parent: Network & Security Home Lab Module 1
 nav_order: 4
@@ -15,7 +15,7 @@ nav_exclude: false
 ###### Posted ***June 17, 2024***
 
 {: .text-center }
-### <span style="color: orange; font-weight: bold;">Part 4 - pfSense Firewall configuration</span>
+### <span style="color: orange; font-weight: bold;">Part 3 - pfSense Firewall configuration</span>
 
 
 pfSense General Configuration

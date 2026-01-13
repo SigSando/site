@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Part 3 - Parrot Security (Linux setup)"
+title: "Part 4 - Parrot Security (Linux setup)"
 categories: Security
 parent: Network & Security Home Lab Module 1
 nav_order: 4
@@ -14,7 +14,7 @@ nav_exclude: false
 ###### Posted ***June 16, 2024***
 
 {: .text-center }
-## <span style="color: orange; font-weight: bold;">Part 3 - Parrot Linux setup</span>
+## <span style="color: orange; font-weight: bold;">Part 4 - Parrot Linux setup</span>
 
 
 In this module, we are going to install Parrot OS. This VM will be used for ethical hacking and management.
