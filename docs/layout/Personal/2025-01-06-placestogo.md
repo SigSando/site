@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Ho$pital"
+title: "Tunnel Pictures"
 categories: Personal
 parent: Photo collection
 nav_order: 2
@@ -8,10 +8,10 @@ nav_exclude: false
 ---
 
 {: .text-center }
-## <span style="color: orange; font-weight: bold;">Hospital experience</span>
+## <span style="color: orange; font-weight: bold;">Hospital Tunnels</span>
 
 
-###### Places the tunnels told me to visit
+###### Places to visit
 ![lighthouse](/site/assets/IMG_6723.png)
 
 ![minersbeach](/site/assets/IMG_6730.png)

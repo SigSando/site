@@ -7,7 +7,7 @@ nav_order: 7
 ---
 
 {: .text-center }
-## <span style="color: orange; font-weight: bold;">Photo repo #1</span>
+## <span style="color: orange; font-weight: bold;">Photo collection #1</span>
 
 ##### Underconstruction
 

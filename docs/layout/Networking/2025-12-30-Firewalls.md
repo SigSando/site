@@ -3,13 +3,13 @@ layout: post
 title: "Firewalls" 
 nav_enabled: true
 nav_order: 3
-parent: Networking 101
+parent: Networking notes
 ---
 
 {: .text-center }
 # Firewalls
 
-![firel](/assets/firel.png){: width="auto" height="auto" }
+![firel](/site/assets/firel.png){: width="auto" height="auto" }
 
 {: .text-center }
 ## <span style="color: orange; font-weight: bold;">What are firewalls & what do they do?</span>

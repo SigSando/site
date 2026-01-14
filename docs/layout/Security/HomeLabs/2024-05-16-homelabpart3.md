@@ -168,7 +168,7 @@ Go to `Network -> Adapter 1`. For the Attached to field select `Internal Network
 ![vbox50.png](/site/assets/vbox50.png){: width="auto" height="auto" }
 
 
-## <span style="color: royalblue; font-weight: bold;">Changing Default password/IP a</span>
+## <span style="color: royalblue; font-weight: bold;">Changing Default password</span>
 
 > Select pfSense from the sidebar and click on `Start` on the toolbar.
 
@@ -176,10 +176,8 @@ Go to `Network -> Adapter 1`. For the Attached to field select `Internal Network
 
 > Once Parrot starts, find the terminal in the top left.
 
--  We will run a series of commands, *firstly* to identify if pfSense issued an IP address in the correct subnet, and *secondly* to change the password.
-
 {: .warning}
-You should also change the default username.
+You should always change the default username as well as root just to start.
 
 
 ```scss
@@ -188,7 +186,7 @@ ip a
 
 ![vbox51.png](/site/assets/vbox51.png){: width="auto" height="auto" }
 
-- We can confirm the right subnet is designated by cross referencing the pfSense router. See below.
+- We can confirm the right subnet is designated by cross referencing the pfSense router config.
 
 <details markdown="block">
 <summary> <span style="color: orange; font-weight: bold;">Image Ref. (click me!)</span> </summary>
@@ -199,9 +197,12 @@ ip a
 
 
 ```scss
+passwd user
+
 sudo su
 
-passwd user
+passwd root
+
 ```
 
 ![vbox52.png](/site/assets/vbox52.png){: width="auto" height="auto" }
@@ -229,11 +230,11 @@ After the update is complete run the following command to remove the unused pack
 sudo apt autoremove
 ```
 
-## <span style="color: royalblue; font-weight: bold;">Download Kali and Cachy OS</span>
+## <span style="color: royalblue; font-weight: bold;">Download additional linux distros</span>
 
-This next section is optional and up to your preference. Since both Kali and Cachy OS come in `.iso` format we can do both installations in the same manner.
+This next section is optional and up to your preference. Since both Kali and Kubuntu come in `.iso` format we can do both installations in the same manner.
 
-Go to the following links: `Download` > [Cachy OS] > [Kali] 
+Go to the following links: `Download` > [Kubuntu] > [Kali] 
 
 
 ![kdown.png](/site/assets/kdown.png){: width="auto" height="auto" }
@@ -251,21 +252,40 @@ Since these are .iso files, you will hit `Create new`. In VirtualBox.
 
 ----
 
-## <span style="color: royalblue; font-weight: bold;">ParrotSec VM Creation</span>
+## <span style="color: royalblue; font-weight: bold;">VM Creation</span>
 
-- Open VirtualBox. 
+- I will not be going over the inital setup for these since they are additional, parrot can do what we need and the steps are largely the same. Here are 2 guides to assist with the installation if desired. 
 
-- Select `Machine` from the toolbar and then click on `New`.
+(quick breakdown, assign 2048-4096mb of memory, 2cores and 20gb storage -> change the network settings -> start the VM -> then run the install. Lastly disconnect the `.iso` (see below for some help.))
+
+
+[Kali install]
+
+- I will go over the necessary steps.
+
+
+## <span style="color: royalblue; font-weight: bold;">Network Configuration</span>
+
+For Kali linux:
+Go to `Network -> Adapter 1`. For the Attached to field select `Internal Network`. For Name select `LAN 0`. Expand the 
+*Advanced* section. For *Adapter Type* select `Paravirtualized Network (virtio-net)`.
+
+We want these machines to all have connectivity to  the pFsense machine.
+
+
+
+![netcon.png](/assets/netcon.png){: width="auto" height="auto" }
 
 
 
 In the next module, we will access the pfSense Web UI and complete the remaining configuration.
 
-### [Home Lab Part 4]({{site.baseurl}}/security/2024-05-16-homelabpart4/){: .btn .btn-green }
+### [Home Lab Part 4]({{site.baseurl}}/docs/layout/Security/2024-05-16-homelabpart4/){: .btn .btn-green }
 
 
 
 
 [Parrot linux]: https://parrotsec.org/download/
-[Cachy OS]: https://cachyos.org/
+[Kubuntu]: https://kubuntu.org/download/
 [Kali]: https://www.kali.org/get-kali/#kali-virtual-machines
+[Kali install]:  https://www.kali.org/docs/installation/hard-disk-install/

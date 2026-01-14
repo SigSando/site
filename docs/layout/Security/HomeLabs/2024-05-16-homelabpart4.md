@@ -23,9 +23,9 @@ Web Portal Setup
 
 > First start your pfSense firewall
 
-> Now we can start our Kali Linux VM
+> Now we can start our Linux VM
 
-On the Kali Linux VM, open the web browser and navigate to `https://10.0.0.1`.
+On the Linux VM, open the web browser and navigate to `https://172.27.11.1`.
 
 You will get the following message *Warning: Potential Security Risk Ahead.* This warning can be ignored in this case.
 
@@ -135,11 +135,24 @@ Scroll to the bottom of the page,
 
 Click on `Advanced Settings`.
 
-Scroll down to the `Advanced Resolver Options` section and enable the 2 pictured options. Scroll to the end and click on Save.
+Scroll down to the `Advanced Resolver Options` section and enable the 2 pictured options. Scroll to the end and click on `Save`.
 
 ![vbox80.png](/site/assets/vbox80.png){: width="auto" height="auto" }
 
 > A popup will appear at the top of the page. Click on `Apply Changes`.
+
+----
+## <span style="color: royalblue; font-weight: bold;">Disabling DHCPv6</span>
+
+Newest updates of VirtualBox/pfSense seem to like trying IPv6 for DHCP. You can disable DHCPv6 to prevent IPv6 addresses from being assigned.
+
+From the navigation bar select `Interfaces` -> `WAN`.
+
+![vbox778.png](/site/assets/vbox778.png){: width="auto" height="auto" }
+
+Set IPv6 Configuration Type to `None`. Scroll to the bottom and click on `Save`.
+
+At the top of the page, a new popup will appear. Click on `Apply Changes`.
 
 ----
 
@@ -159,9 +172,9 @@ At this point a popup will appear click on `OK` to reboot pfSense.
 
 ----
 
-## <span style="color: royalblue; font-weight: bold;">Kali Linux Static IP Assignment</span>
+## <span style="color: royalblue; font-weight: bold;"> Linux Static IP Assignment</span>
 
-Once you have logged in again, 
+In newer versions the previous step was automatically disabled for me. The next step will be setting static IP address for our linux. This reduces the chance for issues with DHCP, connectivity and gives the VM a more permanent IP address.  
 
 From the navigation bar select `Status -> DHCP Leases`.
 
@@ -461,4 +474,4 @@ Once pfSense boots up you will be redirected to the login page.
 
 In the next module, we will add some vulnerable VMs to the `CYBER_RANGE` interface.
 
-### [Home Lab Part 5]({{site.baseurl}}/security/2024-07-04-homelabpart5/){: .btn .btn-green }
+### [Home Lab Part 5]({{site.baseurl}}/docs/layout/Security/2024-07-04-homelabpart5/){: .btn .btn-green }
