@@ -2,7 +2,7 @@
 layout: post
 title: "KQL basics"
 categories: Security
-parent: Security 101
+parent: Security notes
 nav_order: 2
 nav_exclude: false
 ---
