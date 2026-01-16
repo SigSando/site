@@ -2,7 +2,7 @@
 layout: post
 title: "Network & Security Home Lab Module 1"
 categories: Security
-parent: Security 101
+parent: Security notes
 has_children: true
 nav_order: 4
 ---

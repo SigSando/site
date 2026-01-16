@@ -8,18 +8,23 @@ nav_exclude: false
 ---
 
 {: .text-center }
-# RSS readers
+
+## <span style="color: orange; font-weight: bold;">RSS reading</span>
 
 ![rssin](/site/assets/rssin.png){: width="auto" height="auto" }
 
 ###### Posted ***June 22, 2024***
 
-{: .warning }
+
 RSS readers (Really Simple Syndication)
 
 RSS readers are a good way to watch streams of information especially cyber news. I use YARR (its on github) and below is a basic .opml file you can import to see my config. 
 
 Pretty useful if you ask me.
+
+they are based on URLs provided by tech focused propa-news that is interesting to keep up on more so for vulnerability tracking and ransomware tracking. 
+
+Please verify anything prior to importing.
 
 ----
 
